@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindX AI | Suryana International Business Academy</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080b13;
+  color: #f5f5f5;
+  line-height: 1.7;
+}
+
+:root {
+  --gold: #d8b45a;
+  --dark: #080b13;
+  --panel: #121827;
+  --light: #cbd0dc;
+}
+
+header {
+  padding: 18px 7%;
+  background: #0d1220;
+  border-bottom: 1px solid #252d3c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 75px 7%;
+  background: linear-gradient(135deg, #10182b, #080b13);
+}
+
+.hero small {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  max-width: 750px;
+  color: var(--light);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 22px;
+  background: var(--gold);
+  color: #111;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 7%;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.section-title span {
+  color: var(--gold);
+}
+
+.intro {
+  color: var(--light);
+  max-width: 800px;
+  margin-bottom: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #293244;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.card h3 {
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--light);
+  font-size: 14px;
+}
+
+.highlight {
+  background: #101522;
+  border-top: 1px solid #283244;
+  border-bottom: 1px solid #283244;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.timeline-card {
+  background: linear-gradient(145deg, #172034, #101522);
+  border: 1px solid #303b4e;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.timeline-card .number {
+  font-size: 32px;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.timeline-card h3 {
+  margin: 8px 0;
+}
+
+.timeline-card p {
+  color: var(--light);
+  font-size: 14px;
+}
+
+.task {
+  border-left: 3px solid var(--gold);
+}
+
+.task h3 {
+  font-size: 18px;
+}
+
+.task p {
+  color: var(--light);
+  font-size: 14px;
+}
+
+.week {
+  overflow: hidden;
+  padding: 0;
+}
+
+.week-visual {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  background: linear-gradient(135deg, #263653, #101522);
+}
+
+.week-content {
+  padding: 20px;
+}
+
+.week-content h3 {
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.week-content p {
+  color: var(--light);
+  font-size: 14px;
+}
+
+.cta {
+  text-align: center;
+  background: linear-gradient(135deg, #151e30, #080b13);
+}
+
+.cta h2 {
+  font-size: 32px;
+}
+
+.cta p {
+  color: var(--light);
+  margin-top: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #9da6b7;
+  border-top: 1px solid #252d3c;
+  font-size: 13px;
+}
+
+@media(max-width:600px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  nav a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
+  .section-title {
+    font-size: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MindX AI</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#program">Program</a>
+    <a href="#tasks">7 Key Tasks</a>
+    <a href="#weeks">Learning Journey</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <small>SURYANA INTERNATIONAL BUSINESS ACADEMY</small>
+  <h1>Transform Your Mind.<br><span>Master AI. Build Your Future.</span></h1>
+
+  <p>
+    MindX AI is an AI-powered education and practical learning program
+    designed to develop knowledge, digital skills, creativity,
+    productivity and real-world AI application.
+  </p>
+
+  <a href="#program" class="btn">Explore MindX AI ↓</a>
+</div>
+
+<section id="about">
+  <h2 class="section-title">About <span>MindX AI</span></h2>
+
+  <p class="intro">
+    MindX AI combines mindset development, artificial intelligence,
+    digital education, communication, content creation and practical
+    learning to help participants explore new opportunities in the
+    modern digital world.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Artificial Intelligence</h3>
+      <p>Discover AI tools, generative AI and practical applications.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mindset & Growth</h3>
+      <p>Develop goals, discipline, confidence and a growth mindset.</p>
+    </div>
+
+    <div class="card">
+      <h3>Digital Skills</h3>
+      <p>Build digital knowledge and use modern technology effectively.</p>
+    </div>
+
+    <div class="card">
+      <h3>Practical Learning</h3>
+      <p>Apply learning through activities, tasks and practical projects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="program" class="highlight">
+  <h2 class="section-title">Program <span>Overview</span></h2>
+
+  <p class="intro">
+    A structured learning journey combining theory, practice,
+    mentorship and skill development.
+  </p>
+
+  <div class="timeline">
+    <div class="timeline-card">
+      <div class="number">3 Months</div>
+      <h3>Theory & Learning</h3>
+      <p>Build a strong foundation through guided education,
+      concepts, mindset and AI learning.</p>
+    </div>
+
+    <div class="timeline-card">
+      <div class="number">4 Months</div>
+      <h3>Practical Training</h3>
+      <p>Apply your knowledge, develop skills and complete
+      practical learning activities.</p>
+    </div>
+
+    <div class="timeline-card">
+      <div class="number">₹3,000</div>
+      <h3>Monthly Learning Stipend</h3>
+      <p>Program promotional benefit as presented in the
+      MindX AI program information, subject to its terms.</p>
+    </div>
+
+    <div class="timeline-card">
+      <div class="number">AI</div>
+      <h3>Specialist Certification</h3>
+      <p>AI Specialist Certificate and medal as described
+      in the program offer.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tasks">
+  <h2 class="section-title">MindX AI <span>7 Key Tasks</span></h2>
+
+  <p class="intro">
+    Participants are expected to follow the program commitments
+    and maintain consistency throughout the learning journey.
+  </p>
+
+  <div class="cards">
+
+    <div class="card task">
+      <h3>01 · Class Attendance</h3>
+      <p>Attend 100% of online classes and actively participate
+      in the learning sessions.</p>
+    </div>
+
+    <div class="card task">
+      <h3>02 · Daily Social Media Activity</h3>
+      <p>Publish 3 social media posts every day as part of
+      the program activity.</p>
+    </div>
+
+    <div class="card task">
+      <h3>03 · Education System Outreach</h3>
+      <p>Inform at least 30 people about the education program
+      within 90 days.</p>
+    </div>
+
+    <div class="card task">
+      <h3>04 · New Admissions Target</h3>
+      <p>Secure 4 new admissions during the 30-day training
+      period as specified in the program tasks.</p>
+    </div>
+
+    <div class="card task">
+      <h3>05 · Daily Mentor Check-In</h3>
+      <p>Make one phone call every day to your mentor
+      for guidance and progress updates.</p>
+    </div>
+
+    <div class="card task">
+      <h3>06 · In-Person Sessions</h3>
+      <p>Attend a minimum of 3 physical sessions
+      within 90 days.</p>
+    </div>
+
+    <div class="card task">
+      <h3>07 · Commitment</h3>
+      <p>Commit to the complete 3-month program
+      and do not quit during the learning period.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="weeks" class="highlight">
+  <h2 class="section-title">Your <span>Learning Journey</span></h2>
+
+  <p class="intro">
+    Explore your learning journey through key development stages.
+    Detailed weekly lessons, activities and images will be added
+    as the official syllabus is finalized.
+  </p>
+
+  <div class="cards">
+
+    <div class="card week">
+      <div class="week-visual">🎯</div>
+      <div class="week-content">
+        <h3>Week 1 · Mindset & Goals</h3>
+        <p>Vision, smart goals, productivity, focus and personal development.</p>
+      </div>
+    </div>
+
+    <div class="card week">
+      <div class="week-visual">💻</div>
+      <div class="week-content">
+        <h3>Week 2 · Digital Foundation</h3>
+        <p>Digital basics, online safety and understanding technology.</p>
+      </div>
+    </div>
+
+    <div class="card week">
+      <div class="week-visual">🤖</div>
+      <div class="week-content">
+        <h3>Week 3 · AI Fundamentals</h3>
+        <p>Discover artificial intelligence and explore generative AI tools.</p>
+      </div>
+    </div>
+
+    <div class="card week">
+      <div class="week-visual">✍️</div>
+      <div class="week-content">
+        <h3>Week 4 · Prompt Engineering</h3>
+        <p>Learn prompting frameworks, responsible AI and practical prompt labs.</p>
+      </div>
+    </div>
+
+    <div class="card week">
+      <div class="week-visual">📱</div>
+      <div class="week-content">
+        <h3>Week 5 · Content Strategy</h3>
+        <p>Audience research, captions, product copy, storytelling and content planning.</p>
+      </div>
+    </div>
+
+    <div class="card week">
+      <div class="week-visual">🎨</div>
+      <div class="week-content">
+        <h3>Week 6 · Digital Creativity</h3>
+        <p>Design fundamentals and creating digital content with AI tools.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Start Your <span style="color:#d8b45a">MindX AI Journey</span></h2>
+
+  <p>
+    Learn today. Develop skills. Explore AI. Create your future.
+  </p>
+
+  <a class="btn"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSc7J644kitsIe17wsS1yh6wFGJilX9OYZ--ygnvmxCuUwVQFA/viewform"
+     target="_blank">
+     Apply for Admission
+  </a>
+</section>
+
+<footer>
+  <p>SURYANA INTERNATIONAL BUSINESS ACADEMY</p>
+  <p>MindX AI Education Program · Empowering People</p>
+  <p>© 2026 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
