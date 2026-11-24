@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEALTHCODE | Suryana International Business Academy</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f18;
+  color: #f5f5f5;
+}
+
+header {
+  background: #111725;
+  padding: 20px;
+  border-bottom: 1px solid #283040;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #dbb65c;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 35px 6%;
+}
+
+.hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 38px;
+  color: #dbb65c;
+  margin-top: 25px;
+}
+
+.hero h2 {
+  font-size: 22px;
+}
+
+.hero p,
+.intro {
+  color: #c4cad6;
+  line-height: 1.8;
+  max-width: 900px;
+}
+
+section {
+  padding: 40px 6%;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.section-title span {
+  color: #dbb65c;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.card {
+  background: #141b29;
+  border: 1px solid #2b3445;
+  border-radius: 14px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card h3 {
+  color: #dbb65c;
+  margin-top: 0;
+}
+
+.card p {
+  color: #c4cad6;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.highlight {
+  background: #111725;
+  border-top: 1px solid #283040;
+  border-bottom: 1px solid #283040;
+}
+
+.btn {
+  display: inline-block;
+  background: #dbb65c;
+  color: #10131b;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 7px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.cta {
+  text-align: center;
+  background: #111725;
+  padding: 45px 20px;
+}
+
+.cta h2 {
+  color: #dbb65c;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #9da7b8;
+  border-top: 1px solid #283040;
+  font-size: 13px;
+}
+
+@media(max-width:600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero img {
+    height: 220px;
+  }
+
+  section {
+    padding: 35px 6%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 210px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SURYANA INTERNATIONAL BUSINESS ACADEMY</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#courses">Courses</a>
+    <a href="index.html#admission">Admission</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1600&q=85" alt="Financial planning and wealth management">
+
+  <h1>WEALTHCODE</h1>
+
+  <h2>Master Your Money. Build Your Wealth.</h2>
+
+  <p>
+    WEALTHCODE is a learning program designed to develop a healthy relationship
+    with money, financial awareness, smart money habits and wealth-building
+    thinking. Understand how money works, make better financial decisions
+    and build a stronger financial future.
+  </p>
+
+  <a href="index.html#admission" class="btn">Apply for Admission →</a>
+</div>
+
+<section>
+  <h2 class="section-title">About <span>WEALTHCODE</span></h2>
+
+  <p class="intro">
+    Financial success begins with the way you think about money. WEALTHCODE
+    helps learners understand financial psychology, develop disciplined
+    money habits, make informed financial decisions and explore the principles
+    of building, protecting and growing wealth over time.
+  </p>
+</section>
+
+<section class="highlight">
+  <h2 class="section-title">What Students <span>Will Learn</span></h2>
+
+  <p class="intro">
+    Explore the mindset, knowledge and habits needed to become financially
+    aware, responsible and future-ready.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=900&q=85" alt="Money mindset">
+      <div class="card-content">
+        <h3>Money Mindset</h3>
+        <p>Understand your beliefs about money, develop a growth mindset and build a positive relationship with wealth.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=85" alt="Financial planning">
+      <div class="card-content">
+        <h3>Financial Awareness</h3>
+        <p>Understand income, expenses, financial goals, money flow and the importance of making informed decisions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=900&q=85" alt="Budget planning">
+      <div class="card-content">
+        <h3>Budgeting & Money Management</h3>
+        <p>Learn to plan your money, control unnecessary expenses and manage your finances more effectively.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?auto=format&fit=crop&w=900&q=85" alt="Saving habits">
+      <div class="card-content">
+        <h3>Saving & Financial Discipline</h3>
+        <p>Develop consistent saving habits, financial discipline and the ability to make money-conscious choices.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85" alt="Wealth creation">
+      <div class="card-content">
+        <h3>Wealth Creation Principles</h3>
+        <p>Explore the fundamentals of wealth creation, long-term thinking, assets, opportunities and financial growth.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?auto=format&fit=crop&w=900&q=85" alt="Financial decision making">
+      <div class="card-content">
+        <h3>Smart Financial Decisions</h3>
+        <p>Develop the ability to evaluate choices, avoid impulsive spending and make thoughtful money decisions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=900&q=85" alt="Multiple income">
+      <div class="card-content">
+        <h3>Income & Opportunities</h3>
+        <p>Understand income sources, skills, value creation and how people explore opportunities to increase earning potential.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=85" alt="Future financial goals">
+      <div class="card-content">
+        <h3>Future Financial Planning</h3>
+        <p>Learn to set financial goals, think long term and create a personal roadmap for your future.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=85" alt="Financial responsibility">
+      <div class="card-content">
+        <h3>Financial Responsibility</h3>
+        <p>Build responsible money habits, understand financial risks and take ownership of your financial choices.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Who Can Join <span>WEALTHCODE?</span></h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Students & Young Adults</h3>
+        <p>Start developing smart money habits and financial awareness early in life.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Working Professionals</h3>
+        <p>Learn to manage income, plan expenses and make better financial decisions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Business Owners</h3>
+        <p>Develop financial thinking, understand money flow and improve financial decision-making.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Anyone Seeking Growth</h3>
+        <p>Build a stronger financial mindset and learn the principles of long-term wealth creation.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Unlock Your Financial Thinking</h2>
+
+  <p class="intro" style="margin:auto">
+    Your financial future begins with knowledge, habits and decisions.
+    Start learning the WEALTHCODE today.
+  </p>
+
+  <a href="index.html#admission" class="btn">Apply for Admission →</a>
+</div>
+
+<footer>
+  <p>© 2026 Suryana International Business Academy</p>
+  <p>Empowering People</p>
+</footer>
+
+</body>
+</html>
