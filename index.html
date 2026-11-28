@@ -9,9 +9,35 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Arial,sans-serif;background:#080b12;color:#fff}
-header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #252a34}
-.logo{color:#d8b45a;font-size:22px;font-weight:bold}
-nav a{color:#ddd;text-decoration:none;margin-left:20px;font-size:14px}
+header{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:0;
+border-bottom:1px solid #252a34;
+}
+.logo{
+width:100%;
+}
+.logo img{
+width:100%;
+height:auto;
+display:block;
+}
+nav{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+padding:15px 0;
+}
+
+nav a{
+color:#ddd;
+text-decoration:none;
+margin:0;
+font-size:16px;
+}
 .hero{padding:90px 8%;background:linear-gradient(120deg,#0a0d14,#171b27,#090b11)}
 .hero small{color:#d8b45a;letter-spacing:3px}
 .hero h1{font-size:48px;line-height:1.2;margin:20px 0}
